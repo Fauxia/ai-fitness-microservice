@@ -20,7 +20,7 @@ public class User {
 
     private String lastName;
 
-    @Column(nullable = false)
+    @Column(nullable = false,unique = true)
     @NotBlank(message = "Email is required")
     private String email;
 

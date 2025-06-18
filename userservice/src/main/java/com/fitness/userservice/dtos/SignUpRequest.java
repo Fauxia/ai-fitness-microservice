@@ -1,6 +1,5 @@
 package com.fitness.userservice.dtos;
 
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
@@ -15,6 +14,6 @@ public class SignUpRequest {
     @NotBlank(message = "Email is required")
     private String email;
 
-    @NotBlank(message = "Email is required")
+    @NotBlank(message = "Password is required")
     private String password;
 }
